@@ -40,12 +40,14 @@ public class ejercicio {
             }
 
         } while (contaFin < 2);
-        HashMap<String> hasmap = new HashMap();
-        System.out.println(arrayList.toString());
-        for (int i: arrayList) {
-            hasmap.put()
-        }
-        hasmap.put
+        HashMap<String> hasmap = new HashMap<Integer>();
+
+       // for (int i = 0; i < arrayList.size() ; i++) {
+         //   if ()
+           // hasmap.put()
+       // }
+        System.out.println(arrayList[1]);
+
     }
 }
 
