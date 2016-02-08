@@ -28,15 +28,14 @@ public class ejercicio {
         int resultado1, resultado2;
 
 
-
         //do while, mientras contaFin sea menor que dos
         //lee una linea,separala por espacios y guardala en un array de Strings.
         //si la longitud del array == 1 y la posicion 0 del array de strings es igual a fin, contador de fin++.
-            //sino reinicializar el contaFin a 0
-                //si la longitud del array es mayor que 1, parsear la posicion 1 y 3 del array y guardarlos como int en resultado1 y resultado2.
-                    //guardamos los resultados segun sea mayor o menor el resultado los jugadores en el arraylist de perdedores o ganadores.
+        //sino reinicializar el contaFin a 0
+        //si la longitud del array es mayor que 1, parsear la posicion 1 y 3 del array y guardarlos como int en resultado1 y resultado2.
+        //guardamos los resultados segun sea mayor o menor el resultado los jugadores en el arraylist de perdedores o ganadores.
         do {
-            str = sc.nextLine();
+            str = sc.nextLine().toLowerCase();
             String[] arrays = str.split(" ");
             if (arrays.length == 1 && arrays[0].equals(str2)) {
 
@@ -62,34 +61,41 @@ public class ejercicio {
             }
 
         } while (contaFin < 2);
+        System.out.println(arrayList.toString());
+    }
+    }
 
 
-
-
-
-
-
-
-
-        HashMap<String,String> hashMap = new HashMap<String,String>();
-        ArrayList<>
-        for (int i : arrayList.toString()) {
-            if (hashMap.get(i)==null) {
-                hashMap.put(i,2);
-            }else{
-                hashMap.put(i,hashMap.get(i)+2);
-            }
-
+/*
+       // ArrayList<Integer> arrayListtoInt = new ArrayList<Integer>();
+        //HashMap<String, String> hashMap = new HashMap<String, String>();
+        for (int i = 0; i < arrayList.size(); i++) {
+            arrayListtoInt.add(Integer.parseInt(arrayList.get(i)));
+        }
+        for (int i = 0; i <arrayListtoInt.size() ; i++) {
+            System.out.print(arrayListtoInt);
         }
 
 
-        //   for (int i = 0; i < arrayList.size(); i++) {
-        //     if (hashMap.containsValue(arrayList[i])) {
-        //       hashMap.put(arrayList[i], +2);
-        //  }
-        //}
-        // System.out.println(arrayList[1]);
+       // for (int i : arrayListtoInt) {
+         //   if (hashMap.get(i) == null) {
+           //     hashMap.put(i, 2);
+            //} else {
+              //  hashMap.put(i, hashMap.get(i) + 2);
+            //}
 
+            //}
+
+
+            //   for (int i = 0; i < arrayList.size(); i++) {
+            //     if (hashMap.containsValue(arrayList[i])) {
+            //       hashMap.put(arrayList[i], +2);
+            //  }
+            //}
+            // System.out.println(arrayList[1]);
+
+        }
     }
-}
+//}
 
+*/
