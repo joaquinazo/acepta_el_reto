@@ -1,9 +1,6 @@
 package LigaDePadel;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * Created by joaquin.lopez on 8/2/16.
@@ -61,41 +58,47 @@ public class ejercicio {
             }
 
         } while (contaFin < 2);
-        System.out.println(arrayList.toString());
-    }
-    }
+        HashMap<String,Integer> hashmap = new HashMap<String,Integer>();
+
+        for (int i = 0; i < arrayList.size() ; i++) {
+            if(!hashmap.containsKey(arrayList.get(i))){
+                hashmap.put(arrayList.get(i),2);
+
+            }else{
+                int p=hashmap.get(arrayList.get(i));
+                p=p+2;
+                hashmap.put(arrayList.get(i),p);
+
+            }
+
+            }
+        for (int i = 0; i < arrayListLoss.size() ; i++) {
+            if(!hashmap.containsKey(arrayListLoss.get(i))){
+                hashmap.put(arrayListLoss.get(i),1);
+
+            }else{
+                int p=hashmap.get(arrayListLoss.get(i));
+                int p2=p+1;
+                hashmap.put(arrayListLoss.get(i),p2);
+
+            }
+
+            ArrayList<Integer> valores=(ArrayList<Integer>) hashmap.values();
+            int max=Collections.max(valores);
+            int position = valores.indexOf(max);
+            ArrayList<String> keys =(ArrayList<String>) hashmap.keySet();
+            String  ganador = keys.get(position);
+            System.out.println(ganador);
 
 
-/*
-       // ArrayList<Integer> arrayListtoInt = new ArrayList<Integer>();
-        //HashMap<String, String> hashMap = new HashMap<String, String>();
-        for (int i = 0; i < arrayList.size(); i++) {
-            arrayListtoInt.add(Integer.parseInt(arrayList.get(i)));
+
+
         }
-        for (int i = 0; i <arrayListtoInt.size() ; i++) {
-            System.out.print(arrayListtoInt);
-        }
-
-
-       // for (int i : arrayListtoInt) {
-         //   if (hashMap.get(i) == null) {
-           //     hashMap.put(i, 2);
-            //} else {
-              //  hashMap.put(i, hashMap.get(i) + 2);
-            //}
-
-            //}
-
-
-            //   for (int i = 0; i < arrayList.size(); i++) {
-            //     if (hashMap.containsValue(arrayList[i])) {
-            //       hashMap.put(arrayList[i], +2);
-            //  }
-            //}
-            // System.out.println(arrayList[1]);
 
         }
     }
-//}
 
-*/
+
+
+
+
