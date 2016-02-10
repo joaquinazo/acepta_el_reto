@@ -54,10 +54,16 @@ public class ejercicio {
 
 
                     }
+
+
+
+
+
                 }
             }
 
         } while (contaFin < 2);
+
         HashMap<String,Integer> hashmap = new HashMap<String,Integer>();
 
         for (int i = 0; i < arrayList.size() ; i++) {
@@ -82,7 +88,8 @@ public class ejercicio {
                 hashmap.put(arrayListLoss.get(i),p2);
 
             }
-
+            //Estas cinco lineas sacan el valor de los valores y devuelve la posicion de el maximo valor
+            //y despues sacamos el la posicion de la clave que nos devuelve
             ArrayList<Integer> valores=(ArrayList<Integer>) hashmap.values();
             int max=Collections.max(valores);
             int position = valores.indexOf(max);
